@@ -1,0 +1,561 @@
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+
+    * {
+    margin: 0;
+    padding: 0;
+    }
+
+    /* here we add poppins font using font face  */
+
+    @font-face {
+    font-family: Poppins;
+    src: url("Fonts/Poppins.ttf");
+    }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    /* home section started */
+
+    .home_container{
+        height:100%;
+        width:100%;
+        background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+
+    .navbar {
+    height: 12vh;
+    width: 100%;
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    }
+
+    .navtext {
+    color: black;
+    padding-left: 7vw;
+    font-family:Outfit;
+    font-size: 1.3rem;
+    font-family: poppins,sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    }
+
+    .navtext:hover {
+        color:rgb(255,124,3);
+
+    font-size: 1.4rem;
+    }
+
+    .sidebar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 16rem;
+        z-index: 999;
+        background-color: rgba(255, 255, 255, 0.502);
+        backdrop-filter: blur(1rem);
+        /* box-shadow: -0.5rem  0 -0.5rem rgba(0, 0, 0, 0.2) ; */
+
+        box-shadow: 0 0 5rem blue;
+        display:none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        
+    }
+
+    .sidebar li{
+        width: 100%;
+        
+    }
+
+    .hide-button{
+        margin-top:3vh;
+        margin-left: 50vw;
+    }
+
+    .sidebar a{
+        width:100%;
+        text-decoration: none;
+        font-family: poppins;
+        color: black;
+    margin-left:2vw;
+    font-size: 1.2rem;
+    padding: 1rem;
+    line-height:2.5rem;
+    }
+
+
+
+
+    nav ul {
+    display:flex;
+    list-style: none;
+    padding-right: 1.5vw;
+    flex-wrap: wrap;
+    }
+
+
+    .navlinks  a {
+    font-family: poppins,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 2.5vw;
+    color: black;
+    font-weight: 500;
+    
+    }
+
+    .navlinks  a:hover {
+    color: rgb(18, 18, 62);
+
+    font-size: 1.3rem;
+    }
+
+    .menu-btn{
+        display:none;
+    }
+
+    .textandimage{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 4vh;
+        padding-right: 10vw;
+    }
+
+    .maintext1{
+        padding-left: 7vw;
+        font-size: 3rem;
+        font-family: poppins,sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        color: rgb(0,32,87);
+    }
+
+    .maintext2{
+        padding-left: 7vw;
+        font-size: 3rem;
+        font-family: poppins;
+        font-weight: 700;
+    }
+
+    .maintext2 span{
+        color:rgb(255,124,3);
+    }
+
+    .maintext3{
+        margin-top: 4vh;
+        padding-left: 7vw;
+        font-family: poppins;
+        font-size: 1.3rem;
+    }
+
+    .maintext3 span{
+        color: rgb(239, 49, 49);
+    }
+
+    .mainimage img{
+        height: 32vw;
+width: auto;
+    }
+
+    .btn{
+        margin-left: 11vw;
+        margin-bottom: 2vh;
+        font-size: 1.3rem;
+        width: 15%;
+        height: 7.5vh;
+        border: none;
+        background-color:rgb(37,6,173) ;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        border-radius:2vw;
+        box-shadow: 0 0 0.2vw black;   
+        cursor: pointer;
+        
+    }
+
+    .btn:hover{
+        background-color: rgb(239, 49, 49);
+    }
+
+    .soicalmediaicons{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3vh;
+    margin-left: 12vw;
+    margin-bottom: 2vh;
+    gap: 1.5vw;
+    }
+    .soicalmediaicons img{
+        background-color: white;
+        border-radius: 1.5rem;
+        height: 5.5vh;
+        width: auto;
+    }
+
+    /* about section started */
+
+    .about_container{
+        height:100%;
+        width:100%;
+        box-sizing: border-box;
+        background-color: #FFDEE9;
+        background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+        box-shadow: 0 0 0.4vw black;   
+        overflow: hidden;
+    }
+
+    .aboutheading{
+        font-size: 3rem;
+        font-family:poppins,sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:700;
+        text-align: center;
+        padding-top: 1.5rem;
+        text-shadow: 0.1rem 0 0 gold;
+    }
+
+    .aboutheading span{
+        color: purple;
+    }
+
+    .aboutme{
+    display: flex;
+    justify-content: space-evenly;
+
+    gap: 6vw;
+    }
+
+    .aboutimage img{
+        height: 73vh;
+        width: auto;
+        margin-bottom: 11vh;
+        margin-left: 2vw;
+        border-radius: 2.5rem;
+        box-shadow: 0 0 3.5rem red;   
+    }
+
+    .aboutimage img:hover{
+        box-shadow: 0 0 3.5rem blue;
+    }
+
+    .abouttext1{
+        font-size: 2rem;
+        font-family: poppins,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 4vh;
+    }
+
+    .abouttext2{
+        font-size: 0.9rem;
+        font-family: poppins,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .abouttext3{
+        margin-top: 6vh;
+        font-size: 0.7rem;
+        font-family: poppins,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        word-wrap: break-word;
+        
+    }
+
+    .abouttext4{
+        margin-top: 2vh;
+        font-size: 0.9rem;
+        font-family: poppins;
+    }
+    .abouttext4 span{
+        color: blue;
+    }
+
+    .abouttext5{
+        font-size: 0.9rem;
+        font-family: poppins;
+    }
+    .abouttext5 span{
+        color: blue;
+    }
+
+    .githubbtn{
+        margin-top: 11vh;
+        margin-left: 12vw;
+        font-size: 1.2rem;
+width: 23%;
+        height: 8vh;
+        border: none;
+        background-color:rgb(234, 32, 32);
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        border-radius:0.9vw;
+        box-shadow: 0 0 0.2vw navy;   
+        cursor: pointer;
+    }
+
+    .githubbtn:hover{
+        background-color:purple ;
+        box-shadow: 0 0 0.5vw black;   
+    }
+
+    /* skills section started */
+
+    .skills_container{
+        height:100%;
+        width:100%;
+        box-sizing: border-box;
+        background-color: #FFDEE9;
+        background-image: linear-gradient(0deg, #571bbd 0%, #5129af 100%);
+        box-shadow: 0 0 0.4vw black;   
+        overflow: hidden;
+    }
+
+    .skillheading p{
+        font-size: 3.5rem;
+        color: white;
+        font-family: poppins,sans-serif,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 3vh;
+        text-shadow: 0.1rem 0 0.2rem gold;
+    }
+
+    .skillborder{
+        margin-top: 4vh;
+        background-color: rgb(128, 12, 218);
+        border: 0.2rem solid rgb(128,12,218);
+        border-radius: 1rem;
+        height: 70vh;
+        width: 90vw;
+        margin-left: 4vw;
+        margin-bottom: 8vh;
+        padding-bottom: 2vh;
+        
+    }
+
+    .skill_image_section{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        flex-wrap: wrap;
+    }
+
+
+    .skillcharacter img{
+        height: 50vh;
+        width: auto;
+        margin-left: 30vw;
+    }
+
+
+    .skillsimages {
+        display: flex;
+        flex-direction: row;
+        padding-top: 8vh;
+        margin-right: 2rem;
+        
+        
+    }
+
+    .skillsimages img{
+        height: 9vh;
+        width: auto;
+        background-color:lightcyan;
+        border-radius: 0.5rem;
+        margin:1vw;
+        margin-left: 10vw;
+    } 
+    
+    /* project section started */
+
+    .projects_container{
+        height:100%;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: rgb(0,32,87);
+        box-shadow: 0 0 0.4vw black;   
+        overflow: hidden;
+    }
+
+    .projectheading{
+        font-size: 3.5rem;
+        font-family:poppins;
+        font-weight:700;
+        text-align: center;
+        color: white;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 3vh;
+        text-shadow: 0.1rem 0 green;
+    }
+
+    .projectheading img{
+        height: 13vh;
+        width: auto;
+        margin-top: 2.2vh;
+    }
+
+    .projectsimages{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    }
+
+    .project_programmer img{
+        height: 65vh;
+        width: auto;
+    }
+
+    .projectimage_1 img{
+        padding-top: 8vh;
+        height: 45vh;
+        width: auto;
+    border-radius: 1.5rem;
+    margin-left: 12vw;
+    }
+
+    .projectimage_1 p{
+        font-size: 1.3rem;
+        font-weight: 550;
+        font-family: poppins;
+        color: black;
+        text-align: center;
+        background-color: yellow;
+        border-radius: 2vh;
+        margin-bottom: 8vh;   
+        margin-left: 12vw;
+        margin-top: 1vh;
+    }
+    
+    /* contact section started here */
+
+
+    .contact_container{
+        height:100%;
+        width:100%;
+        box-sizing: border-box;
+        background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+
+        
+        box-shadow: 0 0 0.4vw black;      
+        overflow:hidden;
+    } 
+
+    .contactheading{
+        font-size: 3.5rem;
+        font-family:poppins;
+        font-weight:700;
+        text-align: center;
+        margin-top: 5vh;
+        color: white;
+        text-shadow: 0.2rem 0.2rem blue;
+    }
+
+    .form_container{
+        height: 65vh;
+        width: 70%;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        margin-top: 7vh;
+        border-radius: 1rem;
+        margin-left: 17vw;
+        box-shadow: 0 0 0.2rem black;
+        margin-bottom: 5vh;
+    }
+
+    .contact_image img{
+        height: 45vh;
+        width: auto;
+        margin-left: 6vw;
+        
+    }
+
+    .contactform pre{
+        display: none;
+    }
+
+    form{
+        width:45vw;
+        margin-left:9vw;
+    }
+    
+    input, textarea {
+        width: 50%;
+        padding:1vw;
+        margin-bottom: 2vh;
+        border: 0.1rem solid black;
+        border-radius: 0.1rem;
+        
+    }
+    
+    ::placeholder{
+        color: rgb(18, 18, 62);
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif,sans-serif,cursive;
+        font-family: poppins;
+        font-size: 1rem;
+        
+    }
+
+    .sendbtn .submitbtn {
+width: auto;
+        background-color: blue;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        font-family: poppins,sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border-radius:0.5rem;
+        margin-left:18vw;
+    cursor: pointer;
+    }
+
+    /* footer section started here */
+
+    .footer_container{
+        width: 100%;
+        height: 30%;
+        background-color: rgb(18, 18, 62);
+        box-sizing: border-box;
+    }
+
+    .footerheading{
+        
+        font-size: 2.5rem;
+        text-align: center;
+        font-family: poppins;
+        color: white;
+        padding-top: 2.5vh;
+        padding-bottom: 3vh;
+        font-weight: 700;   
+    }
+
+    .footerlast {
+        font-size: 0.8rem;
+        font-family: poppins;
+        text-align: center;
+        margin-right: 4vw;
+        padding-bottom: 2vh;
+        color: white;
+    }
+
+    .footerlast img{
+        padding-top: 0.2vh;
+        height:0.9vw;
+    }

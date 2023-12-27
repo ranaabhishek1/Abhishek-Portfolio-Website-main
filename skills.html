@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Skills - Abhishek Rana's Portfolio </title>
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+
+    <nav>
+        <div class="navbar">
+
+
+            <div class="navtext">
+                <p> Abhishek Portfolio </p>
+            </div>
+
+
+            <ul class="sidebar">
+                <li class="hide-button" onclick="hideSiderbar()"><a href="#"> <svg
+                            xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 -960 960 960"
+                            width="30">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About </a></li>
+                <li> <a href="skills.html"> Skills </a></li>
+                <li><a href="projects.html"> Projects </a></li>
+                <li> <a href="contact.html"> Contact </a></li>
+
+
+            </ul>
+
+
+            <ul class="navlinks">
+                <li class="hideOnMobile"> <a href="index.html"> Home</a></li>
+                <li class="hideOnMobile"><a href="about.html">About </a></li>
+                <li class="hideOnMobile"> <a href="skills.html"> Skills </a></li>
+                <li class="hideOnMobile"><a href="projects.html"> Projects </a></li>
+                <li class="hideOnMobile"> <a href="contact.html"> Contact </a></li>
+
+                <li class="menu-btn" onclick="showSidebar()"><a href="#"> <svg
+                            xmlns="http://www.w3.org/2000/svg" height="28" viewBox="0 -960 960 960"
+                            width="28">
+                            <path
+                                d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
+
+
+            </ul>
+
+        </div>
+</div>
+</nav>
+
+    <!-- Here We Started Skills Section  -->
+
+
+    <section class="skills">
+        <div class="skills_container">
+            <div class="skillheading">
+                <p> Skills 👨‍💻</p>
+            </div>
+
+            <div class="skillborder">
+                <div class="skill_image_section">
+                    <div class="skillcharacter">
+                        <img src="skill image.png" alt="">
+
+                    </div>
+                    <div class="skillsimages">
+                        <img src="C Programming.png" alt="">
+                        <img src="C++ Programming.png" alt="">
+                        <img src="html-5.png" alt="">
+                        <img src="css3.png" alt="">
+                        <img src="Javascript.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    
+        <script>
+            function showSidebar(){
+                const sidebar=document.querySelector('.sidebar')
+            
+                sidebar.style.display='flex'
+            }
+            
+            function hideSiderbar(){
+            
+                const sidebar=document.querySelector('.sidebar')
+            
+                sidebar.style.display='none'
+            
+            }
+            
+            </script>
+    
+</body>
+</html>
